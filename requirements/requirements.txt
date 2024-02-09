@@ -4,7 +4,7 @@
 #
 #    pip-compile --no-emit-index-url requirements/requirements.in
 #
-amqp==5.2.0
+amqp==5.1.0
     # via kombu
 analytics-python==1.2.9
     # via -r requirements/requirements.in
@@ -28,7 +28,7 @@ bytecode==0.15.1
     # via ddtrace
 cattrs==23.2.3
     # via ddtrace
-celery==5.3.6
+celery==5.3.5
     # via -r requirements/requirements.in
 certifi==2024.2.2
     # via
@@ -54,13 +54,13 @@ cryptography==42.0.2
     # via pyjwt
 datadog==0.48.0
     # via -r requirements/requirements.in
-ddsketch==2.0.4
+ddsketch==2.0.3
     # via ddtrace
 ddtrace==2.6.0
     # via -r requirements/requirements.in
 deprecated==1.2.14
     # via opentelemetry-api
-django==4.2.10
+django==4.2.7
     # via
     #   -r requirements/requirements.in
     #   django-allow-cidr
@@ -193,7 +193,7 @@ typing-extensions==4.9.0
     #   pydantic
 tzdata==2023.4
     # via celery
-urllib3==2.0.7
+urllib3==2.0.1
     # via
     #   botocore
     #   requests
