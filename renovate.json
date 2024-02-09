@@ -1,0 +1,20 @@
+{
+  "timezone": "Europe/Helsinki",
+  "schedule": [
+    "after 9am on friday"
+  ],
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
+    }
+  ]
+}
