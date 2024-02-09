@@ -1,0 +1,34 @@
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "D",
+    "E",
+    "F",
+    "G",
+    "I",
+    "TID",
+    "UP009",
+    "W",
+    "B023",  # Lambda late binding
+]
+ignore = ["D1","D2","D4"]
+
+[tool.ruff.lint.isort]
+force-single-line = true
+lines-after-imports = 2
+extra-standard-library = ["zoneinfo"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.pytest.ini_options]
+addopts = "-n0 --disable-socket"
+python_files = [ "tests/**/test_*.py", "tests/test_*.py", "tests.py" ]
+django_debug_mode = "keep"
+
+
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
