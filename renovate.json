@@ -1,20 +1,30 @@
 {
-  "timezone": "Europe/Helsinki",
-  "schedule": [
-    "after 9am on friday"
-  ],
+  "constraints": {
+    "python": "==3.11"
+  },
   "extends": ["config:recommended"],
-  "packageRules": [
-    {
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-minor-patch",
-      "matchPackagePatterns": [
-        "*"
+  "pep621": {
+    "enabled": false
+  },
+  "pip_requirements": {
+    "enabled": false
+  },
+  "poetry": {
+    "enabled": false
+  },
+  "pip-compile": {
+    "enabled": true,
+    "fileMatch": [
+      "(^|/)requirements\\.in$"
+    ],
+    "lockFileMaintenance": {
+      "enabled": true,
+      "branchTopic": "pip-compile-refresh",
+      "commitMessageAction": "Refresh pip-compile outputs",
+      "schedule": [
+        "after 9am on friday"
       ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ]
+      "timezone": "Europe/Helsinki"
     }
-  ]
+  }
 }
