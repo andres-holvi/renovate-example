@@ -3,7 +3,7 @@ boto3
 celery
 datadog
 ddtrace
-Django<5
+Django<6
 djangorestframework
 django-countries
 django-extensions
