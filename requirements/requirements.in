@@ -22,7 +22,7 @@ gunicorn
 kombu
 Markdown
 psycopg2-binary
-pydantic<2
+pydantic<3
 python-dateutil
 python-json-logger
 rapidfuzz
