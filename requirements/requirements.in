@@ -27,6 +27,6 @@ python-dateutil
 python-json-logger
 rapidfuzz
 redis
-sentry-sdk==1.33.1
+sentry-sdk==1.40.5
 simplejson
 pyjwt[crypto]
