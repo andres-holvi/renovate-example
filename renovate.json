@@ -1,6 +1,6 @@
 {
   "constraints": {
-    "python": "==3.11"
+    "python": "=3.14.7"
   },
   "extends": ["config:recommended"],
   "pep621": {
